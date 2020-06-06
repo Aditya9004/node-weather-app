@@ -6,24 +6,45 @@
     <title>Weather</title>
      <link rel="icon" href="/img/3.png">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
-<body>
-    <div class="main-content">
+<body class="text-center">
+    <div class="container">
         {{>header}}
         <p>Use this site to know about weather</p>
 
         <form>
-            <input type="text" placeholder="Search Location">
-            <button>Search</button>
-        </form>
+            <div class="row">
+                <div class="col-md-5">
 
+                </div>
+                <div class = "col-md-6">
+                    <div class="row">
+                     <div class="col-1">
+                    <a><i class="fa fa-search"></i></a>
+                </div>
+                <div class="col-4">
+                    <input type="text" class="form-control" placeholder="Search Location">
+                </div>
+                </div>
+                </div>
+               
+            </div>
+            
+        </form>
+        
         <p id="messageOne"></p>
         <p id="messageTwo"></p>
+
+        {{!-- <div class="climacell-widget" data-apikey="23T3m8wZ9zmn8wh1NEXB8QtwJna8IQGD" data-type="nowcast" data-location-name="280 Summer Street, Boston, MA 02210, USA" data-location-lon="-71.04974909999999" data-location-lat="42.3502782" data-size-mode="large" data-font-color="#000" data-background-color="#fff" data-font-family="verdana" data-weather-params="temp:C,precipitation:mm/hr,wind_speed:mph,humidity:%,cloud_cover:%" data-precipitation-timeline="true" data-allow-users-enter-address="true" ></div> --}}
     </div>
 
     {{>footer}}
     <script src="js/app.js"></script>
+    <script type="text/javascript" src="https://widgets-viewer.climacell.co/v1/sdk.js"></script>
 </body>
 
 </html>

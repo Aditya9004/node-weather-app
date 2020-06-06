@@ -21,3 +21,7 @@ weatherForm.addEventListener('submit',(e)=>{
 })
 })
 
+$('document').ready(function () {
+   
+})
+

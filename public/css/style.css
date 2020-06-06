@@ -1,19 +1,6 @@
-body{
-    color : #333333;
-    font-family: arial;
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 0 16px;
-
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body {
+    overflow: hidden;
 }
-
-.main-content {
-    flex-grow: 1;
-}
-
 footer{
     color: #888888;
     border-top: 1px solid #eeeeee;
@@ -42,7 +29,6 @@ header a {
 }
 
 input {
-    border: 1px solid #cccccc;
     padding: 8px;
 }
 
